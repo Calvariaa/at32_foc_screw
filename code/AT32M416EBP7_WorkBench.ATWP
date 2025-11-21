@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <WorkBenchVersion>
+        <Version>V1.2.00</Version>
+    </WorkBenchVersion>
+    <MCUInfo>
+        <MCUSerials>AT32M416</MCUSerials>
+        <MCUName>AT32M416EBP7</MCUName>
+        <MCUPackage>TSSOP24</MCUPackage>
+    </MCUInfo>
+    <ADC-Common>
+        <Mode>
+            <ModeSub name="Activated" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="Mode" value="ADC_ORDINARY_SMLT_ONLY_ONESLAVE_MODE"/>
+            <ParametersSub name="Clock" value="30000000"/>
+        </Parameters>
+    </ADC-Common>
+    <ADC2>
+        <Mode>
+            <ModeSub name="IN1" value="TRUE"/>
+            <ModeSub name="IN3" value="TRUE"/>
+            <ModeSub name="IN4" value="TRUE"/>
+            <ModeSub name="IN5" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="Channel_OrdinarySequence_1" value="ADC_CHANNEL_1"/>
+            <ParametersSub name="SamplingRate_OrdinarySequence_1" value="2.143"/>
+        </Parameters>
+    </ADC2>
+    <DEBUG>
+        <Mode>
+            <ModeSub name="SWD" value="TRUE"/>
+            <ModeSub name="SWO" value="FALSE"/>
+        </Mode>
+    </DEBUG>
+    <I2C1>
+        <Mode>
+            <ModeSub name="I2C" value="I2C"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="Timing_Configuration_Value" value="0xF0F03131"/>
+            <ParametersSub name="DualAddressMode" value="DISABLE"/>
+        </Parameters>
+    </I2C1>
+    <SYSTEM>
+        <Mode>
+            <ModeSub name="Time_Base" value="SysTick"/>
+        </Mode>
+    </SYSTEM>
+    <TMR1>
+        <Mode>
+            <ModeSub name="Channel1 mode" value="Output_CH1_CH1C"/>
+            <ModeSub name="Channel2 mode" value="Output_CH2_CH2C"/>
+            <ModeSub name="Channel3 mode" value="Output_CH3_CH3C"/>
+            <ModeSub name="Channel4 mode" value="Output_without_pin"/>
+            <ModeSub name="Activated" value="TRUE"/>
+            <ModeSub name="Enable BRK pin" value="TRUE"/>
+        </Mode>
+    </TMR1>
+    <TMR3>
+        <Mode>
+            <ModeSub name="Multi-Channels" value="Encoder_Mode"/>
+            <ModeSub name="Activated" value="TRUE"/>
+        </Mode>
+    </TMR3>
+    <USART2>
+        <Mode>
+            <ModeSub name="Mode" value="Asynchronous"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="RealBaudRate" value="115163"/>
+        </Parameters>
+    </USART2>
+    <NVIC>
+        <SysTick_Handler>1;15;0;0;0</SysTick_Handler>
+        <FLASH_IRQHandler>0;0;0;0;0</FLASH_IRQHandler>
+        <CRM_IRQHandler>0;0;0;0;0</CRM_IRQHandler>
+        <ADC1_2_IRQHandler>0;0;0;0;0</ADC1_2_IRQHandler>
+        <TMR1_BRK_TMR9_IRQHandler>1;0;0;0;0</TMR1_BRK_TMR9_IRQHandler>
+        <TMR1_OVF_TMR10_IRQHandler>1;0;0;0;0</TMR1_OVF_TMR10_IRQHandler>
+        <TMR1_TRG_HALL_TMR11_IRQHandler>1;0;0;0;0</TMR1_TRG_HALL_TMR11_IRQHandler>
+        <TMR1_CH_IRQHandler>0;0;0;0;0</TMR1_CH_IRQHandler>
+        <TMR3_GLOBAL_IRQHandler>0;0;0;0;0</TMR3_GLOBAL_IRQHandler>
+        <I2C1_EVT_IRQHandler>0;0;0;0;0</I2C1_EVT_IRQHandler>
+        <I2C1_ERR_IRQHandler>0;0;0;0;0</I2C1_ERR_IRQHandler>
+        <USART2_IRQHandler>0;0;0;0;0</USART2_IRQHandler>
+        <FPU_IRQHandler>0;0;0;0;0</FPU_IRQHandler>
+    </NVIC>
+    <ClockConfiguration>
+        <rtcsel>0</rtcsel>
+        <rtcdiv>2</rtcdiv>
+        <hext>8.000000</hext>
+        <sclkhextdiv>1</sclkhextdiv>
+        <sclkhickdiv>1</sclkhickdiv>
+        <pllrcs>1</pllrcs>
+        <pllms>1</pllms>
+        <pllns>90</pllns>
+        <pllfr>4</pllfr>
+        <sclkselect>1</sclkselect>
+        <ahbdiv>1</ahbdiv>
+        <apb1div>1</apb1div>
+        <apb2div>1</apb2div>
+        <apb3div>4</apb3div>
+        <hicktosclk>0</hicktosclk>
+        <clkout>5</clkout>
+        <clkoutdiv1>1</clkoutdiv1>
+        <clkoutdiv2>1</clkoutdiv2>
+        <canclocksel>1</canclocksel>
+        <systicsel>8</systicsel>
+    </ClockConfiguration>
+    <PINInfo>
+        <PinSub pinname="PF0" signalname="TMR1_CH1" signaltype="2"/>
+        <PinSub pinname="PF1" signalname="TMR1_CH2C" signaltype="2"/>
+        <PinSub pinname="PA0" signalname="USART2_RX" signaltype="2"/>
+        <PinSub pinname="PA1" signalname="ADC2_IN1" signaltype="2"/>
+        <PinSub pinname="PA2" signalname="USART2_TX" signaltype="2"/>
+        <PinSub pinname="PA3" signalname="ADC2_IN3" signaltype="2"/>
+        <PinSub pinname="PA4" signalname="ADC2_IN4" signaltype="2"/>
+        <PinSub pinname="PA5" signalname="ADC2_IN5" signaltype="2"/>
+        <PinSub pinname="PA6" signalname="TMR1_BRK" signaltype="2"/>
+        <PinSub pinname="PA7" signalname="TMR1_CH1C" signaltype="2"/>
+        <PinSub pinname="PB15" signalname="TMR1_CH3C" signaltype="2"/>
+        <PinSub pinname="PA9 [PA11]" signalname="TMR1_CH2" signaltype="2"/>
+        <PinSub pinname="PA10 [PA12]" signalname="TMR1_CH3" signaltype="2"/>
+        <PinSub pinname="PA13" signalname="DEBUG_SWDIO" signaltype="2"/>
+        <PinSub pinname="PA14" signalname="DEBUG_SWCLK" signaltype="2"/>
+        <PinSub pinname="PB3" signalname="GPIO_Input" signaltype="3"/>
+        <PinSub pinname="PB4" signalname="TMR3_CH1" signaltype="2"/>
+        <PinSub pinname="PB5" signalname="TMR3_CH2" signaltype="2"/>
+        <PinSub pinname="PB6" signalname="I2C1_SCL" signaltype="2"/>
+        <PinSub pinname="PB7" signalname="I2C1_SDA" signaltype="2"/>
+        <PinSub pinname="BOOT0/PB8" signalname="GPIO_Output" signaltype="3"/>
+    </PINInfo>
+    <ProjectInfomation>
+        <ProjectName>AT32M416EBP7_WorkBench</ProjectName>
+        <ProjectLocation>C:/Users/Calvaria/Documents/Code/AT32/at32_foc_screw/code</ProjectLocation>
+        <ToolchainIDE>CMake</ToolchainIDE>
+        <ARMCompiler>0</ARMCompiler>
+        <KeepUserCode>true</KeepUserCode>
+        <NotUsedPinAnalog>false</NotUsedPinAnalog>
+        <CodeSplitIP>true</CodeSplitIP>
+        <AddNecessaryFileFlag>true</AddNecessaryFileFlag>
+        <MinHeapSize>0x200</MinHeapSize>
+        <MinStackSize>0x400</MinStackSize>
+        <UseFirmware>true</UseFirmware>
+        <PackageVersion>V2.0.2</PackageVersion>
+    </ProjectInfomation>
+</Root>
